@@ -33,7 +33,7 @@ async function getInfo() {
                 cityName.innerHTML = data.name;
                 windMeasure.innerHTML = `${Math.round(data.wind.speed)}km/hr`;
                 humidMeasure.innerHTML = `${Math.round(data.main.humidity)}%`;
-                weatherInfo.setAttribute(`src`, `./assets/${data.weather[0].toLowerCase().main}.png`);
+                weatherInfo.setAttribute(`src`, `./assets/${data.weather[0].main.toLowerCase()}.png`);
                 weatherInfo.setAttribute(`alt`, `${data.weather[0].main}`);
 
             } else if (data.cod > 399 && data.cod < 500) {
@@ -67,8 +67,8 @@ onload = async () => {
         cityName.innerHTML = data.name;
         windMeasure.innerHTML = `${Math.round(data.wind.speed)}km/hr`;
         humidMeasure.innerHTML = `${Math.round(data.main.humidity)}%`;
-        weatherInfo.setAttribute(`src`, `./assets/${data.weather[0].toLowerCase().main}.png`);
-        weatherInfo.setAttribute(`alt`, `${data.weather[0].main}`);
+        weatherInfo.setAttribute(`src`, `./assets/${data.weather[0].main.toLowerCase()}.png`);
+        weatherInfo.setAttribute(`alt`, `${data.weather[0].main.toLowerCase()}`);
 
     } else if (data.cod > 399 && data.cod < 500) {
 
