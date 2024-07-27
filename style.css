@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     background: linear-gradient(to bottom right, var(--background-gradient-starting),var(--background-gradient-ending));
 }
